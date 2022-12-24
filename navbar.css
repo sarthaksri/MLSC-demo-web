@@ -1,0 +1,220 @@
+
+html
+{
+margin: 0%;
+padding: 0px;
+}
+body
+{
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0%;
+    padding: 0px;
+}
+.link{
+  color:white;
+}
+.logo{
+    max-height: 20vh;
+   
+}
+.navElement
+{
+    color: azure;
+    font-weight: bold;
+    font-size: 18px;
+    border-spacing: 1vw;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.navbar
+{
+    z-index: 3;
+    display: flex;
+    background-color: #301989;
+    max-height: 20vh;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    box-shadow: 10px 10px 5px lightblue;
+}
+.siteText
+{
+    min-height: 70vh;
+    padding: 5px;
+    min-height: ;
+    font-size: xx-large;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0%;
+    background-color: #68d4d4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer
+{
+    color: aliceblue;
+    width: 100%;
+    height: 10vh;
+    min-height: fit-content;
+    font-size: 2vh;
+    bottom: 0%;
+    left: 0%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* align-content: center; */
+    align-items: center;
+}
+.wrapper {
+    width: 200px;   
+    height: 60px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .circle {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 15%;
+    transform-origin: 50%;
+    animation: circle7124 .5s alternate infinite ease;
+  }
+  
+  @keyframes circle7124 {
+    0% {
+      top: 60px;
+      height: 5px;
+      border-radius: 50px 50px 25px 25px;
+      transform: scaleX(1.7);
+    }
+  
+    40% {
+      height: 20px;
+      border-radius: 50%;
+      transform: scaleX(1);
+    }
+  
+    100% {
+      top: 0%;
+    }
+  }
+  
+  .circle:nth-child(2) {
+    left: 45%;
+    animation-delay: .2s;
+  }
+  
+  .circle:nth-child(3) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+  
+  .shadow {
+    width: 10px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 30px;
+    transform-origin: 50%;
+    z-index: -1;
+    left: 15%;
+    filter: blur(1px);
+    animation: shadow046 .5s alternate infinite ease;
+  }
+  
+  @keyframes shadow046 {
+    0% {
+      transform: scaleX(1.5);
+    }
+  
+    40% {
+      transform: scaleX(1);
+      opacity: .7;
+    }
+  
+    100% {
+      transform: scaleX(.2);
+      opacity: .4;
+    }
+  }
+  
+  .shadow:nth-child(4) {
+    left: 45%;
+    animation-delay: .2s
+  }
+  
+  .shadow:nth-child(5) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+       
+  ::-webkit-scrollbar{
+    width: 10px;
+    background-color: aquamarine;
+  }
+  .link_text{
+    color: #fff;
+  }
+  .link_text:hover{
+    color: rgb(224, 157, 106);
+    
+  }
+  #contactUs
+  {
+        border: none;
+        border-radius: 15px;
+        padding: none;
+        background-color: #e8e8e8;
+        box-shadow: 6px 6px 12px #ffffff,
+                    -6px -6px 12px #c5c5c5;
+        font-size: medium;
+        font-weight: bold;
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+        height: 30vh;   
+  }
+  #contactUs:focus {
+    outline-color: white;
+   }
+   .userName {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+   }
+   
+   .userName:focus, .userName:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #7a9cc6;
+   }
+   
+   .userName::placeholder {
+    color: #777;
+   }
+   
+   .userName:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
